@@ -1,1 +1,53 @@
 
+ gcc -g p4original.c 
+32    int sum = 0;
+(gdb) n
+33    for (int i = 0; i < n; i++)
+(gdb) 
+35      if (is_composite(a[i]))
+(gdb) 
+37        sum += a[i];
+(gdb) 
+33    for (int i = 0; i < n; i++)
+(gdb) 
+35      if (is_composite(a[i]))
+(gdb) 
+33    for (int i = 0; i < n; i++)
+(gdb) 
+35      if (is_composite(a[i]))
+(gdb) 
+33    for (int i = 0; i < n; i++)
+(gdb) 
+35      if (is_composite(a[i]))
+(gdb) 
+37        sum += a[i];
+(gdb) 
+33    for (int i = 0; i < n; i++)
+(gdb) 
+35      if (is_composite(a[i]))
+(gdb) 
+37        sum += a[i];
+(gdb) 
+33    for (int i = 0; i < n; i++)
+(gdb) 
+40    return sum;
+(gdb) p sum
+$3 = 24
+(gdb) n
+41  }
+(gdb) 
+main () at p4original.c:54
+54    output(res);
+(gdb) s
+output (sum=24) at p4original.c:45
+45    printf("%d\n", sum);
+(gdb) n
+24
+46  }
+(gdb) 
+main () at p4original.c:55
+55    return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 3325) exited normally]
+(gdb) 
